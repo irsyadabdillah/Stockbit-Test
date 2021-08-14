@@ -2,20 +2,19 @@ package com.stockbit.local.dao
 
 import androidx.room.Dao
 import androidx.room.Query
-import com.stockbit.model.ExampleModel
-import java.util.*
+import com.stockbit.model.WatchlistResponse
 
 @Dao
-abstract class ExampleDao: BaseDao<ExampleModel>() {
+abstract class ExampleDao: BaseDao<WatchlistResponse>() {
 
-    @Query("SELECT * FROM ExampleModel WHERE name = :name LIMIT 1")
-    abstract suspend fun getExample(name: String): ExampleModel
+    @Query("SELECT * FROM WatchlistResponse WHERE name = :name LIMIT 1")
+    abstract suspend fun getExample(name: String): WatchlistResponse
 
-    suspend fun save(data: ExampleModel) {
+    suspend fun save(data: WatchlistResponse) {
         insert(data)
     }
 
-    suspend fun save(datas: List<ExampleModel>) {
-        insert(datas)
+    suspend fun save(data: List<WatchlistResponse>) {
+        insert(data)
     }
 }

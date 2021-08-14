@@ -37,6 +37,7 @@ object Versions {
     val retrofitCoroutines = "0.9.2"
     val retrofitGson = "2.8.1"
     val gson = "2.8.5"
+    val api = ""
     val okHttp = "3.12.1"
     val coroutines = "1.4.3"
     val koin = "2.0.1"
@@ -47,6 +48,7 @@ object Versions {
     val recyclerview = "1.0.0"
     val safeArgs = "1.1.1"
     val glide = "4.12.0"
+    val paging = "2.1.2"
     val archCoreTest = "2.0.0"
     val androidJunit = "1.1.0"
     val mockk = "1.11.0"
@@ -69,6 +71,8 @@ object Libraries {
     val httpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttp}"
     // GLIDE
     val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
+    // PAGING
+    val paging = "androidx.paging:paging-runtime:${Versions.paging}"
 }
 
 object KotlinLibraries {

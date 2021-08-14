@@ -15,4 +15,11 @@ dependencies {
     implementation AndroidLibraries.recyclerView
     implementation AndroidLibraries.navigation
     implementation AndroidLibraries.navigationFrag
+    implementation AndroidLibraries.kotlinCoroutineAndroid
+
+    // KOIN
+    implementation Libraries.koin
+    implementation Libraries.koinViewModel
+
+
 }

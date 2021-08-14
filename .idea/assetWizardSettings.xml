@@ -30,8 +30,8 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="opacityPercent" value="98" />
-                            <entry key="outputName" value="ic_stockbit" />
-                            <entry key="sourceFile" value="E:\stockbit.svg" />
+                            <entry key="outputName" value="ic_chat" />
+                            <entry key="sourceFile" value="E:\chat-4-line.svg" />
                           </map>
                         </option>
                       </PersistentState>
