@@ -4,8 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.stockbit.model.DataResponse
-import com.stockbit.repository.Repository
+import com.stockbit.hiring.model.DataResponse
+import com.stockbit.hiring.repository.Repository
 import kotlinx.coroutines.launch
 
 /**

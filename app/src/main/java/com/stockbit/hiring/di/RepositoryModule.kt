@@ -1,6 +1,6 @@
 package com.stockbit.hiring.di
 
-import com.stockbit.repository.Repository
+import com.stockbit.hiring.repository.Repository
 import org.koin.dsl.module
 
 /**

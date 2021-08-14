@@ -41,7 +41,7 @@ object Versions {
     val okHttp = "3.12.1"
     val coroutines = "1.4.3"
     val koin = "2.0.1"
-    val timber = "4.7.1"
+    val timber = "5.0.1"
     val lifecycle = "2.2.0"
     val nav = "2.0.0"
     val room = "2.3.0"
@@ -73,6 +73,8 @@ object Libraries {
     val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
     // PAGING
     val paging = "androidx.paging:paging-runtime:${Versions.paging}"
+    // TIMBER
+    val timber = "com.jakewharton.timber:timber:${Versions.timber}"
 }
 
 object KotlinLibraries {

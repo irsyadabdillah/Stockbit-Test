@@ -34,7 +34,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -44,21 +44,20 @@
         app:backgroundTint="@null"
         android:background="@drawable/bg_button_border_gray"
         android:drawableStart="@drawable/ic_google"
-        android:drawableLeft="@drawable/ic_google"
-
+        android:paddingHorizontal="16dp"
         android:textColor="@color/primary_text"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
         android:layout_marginTop="16dp"
         android:text="@string/login_with_facebook"
         android:textAllCaps="false"
         app:backgroundTint="@null"
         android:background="@drawable/bg_button_border_gray"
-        android:icon="@drawable/ic_facebook_f"
+        android:drawableStart="@drawable/ic_facebook_f"
+        android:paddingHorizontal="16dp"
         android:textColor="@color/primary_text"/>
 
     <LinearLayout
@@ -96,11 +95,12 @@
         app:boxBackgroundColor="@null">
 
         <EditText
+            android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/username_or_email"
+            android:hint="@string/email"
             android:maxLines="1"
-            android:inputType="text"/>
+            android:inputType="textEmailAddress"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -113,11 +113,12 @@
         app:boxBackgroundColor="@null">
 
         <EditText
+            android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:maxLines="1"
-            android:inputType="text"/>
+            android:inputType="textPassword"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 

@@ -1,8 +1,5 @@
-package com.stockbit.remote
+package com.stockbit.hiring.remote
 
-/**
- * Implementation of [ApiService] interface
- */
 class RemoteDatasource(private val apiService: ApiService) {
 
     suspend fun fetchWatchlistAsync() = apiService.fetchWatchlistAsync()

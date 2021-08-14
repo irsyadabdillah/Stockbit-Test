@@ -1,6 +1,6 @@
 package com.stockbit.remote.base
 
-import com.stockbit.remote.ApiService
+import com.stockbit.hiring.ui.login.ApiService
 import com.stockbit.remote.di.createRemoteModule
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
@@ -14,7 +14,7 @@ import java.io.File
 
 abstract class BaseTest: KoinTest {
 
-    protected val apiService: ApiService by inject()
+    protected val apiService: com.stockbit.hiring.ui.login.ApiService by inject()
     protected lateinit var mockServer: MockWebServer
 
     @Before

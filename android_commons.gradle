@@ -50,4 +50,7 @@ dependencies {
 
     //PAGING
     implementation Libraries.paging
+
+    //TIMBER
+    implementation Libraries.timber
 }

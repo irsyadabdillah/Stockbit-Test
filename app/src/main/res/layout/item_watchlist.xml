@@ -63,8 +63,8 @@
         android:textColor="@color/red"
         android:textStyle="bold"
         android:textSize="8sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/txt_fullname"
+        app:layout_constraintStart_toEndOf="@+id/txt_name"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SmallSp" />
 
@@ -76,6 +76,6 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_fullname" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,27 +2,32 @@ package com.stockbit.hiring.di
 
 import com.stockbit.common.utils.Constant
 import com.stockbit.hiring.BuildConfig
-import com.stockbit.remote.ApiService
-import com.stockbit.remote.RemoteDatasource
+import com.stockbit.hiring.remote.ApiService
+import com.stockbit.hiring.remote.RemoteDatasource
+import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
-import javax.sql.DataSource
 
 /**
  * Created by Irsyad Abdillah on 14,August,2021
  */
 val networkModule = module {
 
+    factory<Interceptor> {
+        HttpLoggingInterceptor()
+            .setLevel(HttpLoggingInterceptor.Level.BODY)
+    }
+
     single {
         OkHttpClient().newBuilder()
             .connectTimeout(Constant.NETWORK_TIMEOUT, TimeUnit.SECONDS)
             .readTimeout(Constant.NETWORK_TIMEOUT, TimeUnit.SECONDS)
             .writeTimeout(Constant.NETWORK_TIMEOUT, TimeUnit.SECONDS)
-//            .addInterceptor(RequestInterceptor(get()))
+//            .addInterceptor()
             .addInterceptor(
                 HttpLoggingInterceptor()
                     .setLevel(if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY else HttpLoggingInterceptor.Level.NONE)

@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.stockbit.hiring.R
-import com.stockbit.model.DataResponse
+import com.stockbit.hiring.model.DataResponse
 import kotlinx.android.synthetic.main.item_watchlist.view.*
 
 /**
