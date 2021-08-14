@@ -1,7 +1,9 @@
 package com.stockbit.hiring
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import com.stockbit.hiring.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -15,6 +17,12 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         actionBar()
+        navigationToWatchlist()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_login_appbar, menu)
+        return true
     }
 
     private fun actionBar() {
@@ -23,6 +31,13 @@ class LoginActivity : AppCompatActivity() {
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_back)
         supportActionBar?.setTitle("")
-        binding.toolbarLogin.inflateMenu(R.menu.menu_login_appbar)
     }
+
+    private fun navigationToWatchlist() {
+        binding.btnLogin.setOnClickListener {
+            startActivity(Intent(applicationContext, WatchlistActivity::class.java))
+        }
+    }
+
+
 }

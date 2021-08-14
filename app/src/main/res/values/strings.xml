@@ -9,4 +9,9 @@
     <string name="dont_have_account">Belum punya akun?   </string>
     <string name="sign_up">Daftar Sekarang</string>
     <string name="login_">Login</string>
+    <string name="watchlist">Watchlist</string>
+    <string name="stream">Stream</string>
+    <string name="search">Search</string>
+    <string name="chat">Chat</string>
+    <string name="portofolio">Portofolio</string>
 </resources>
