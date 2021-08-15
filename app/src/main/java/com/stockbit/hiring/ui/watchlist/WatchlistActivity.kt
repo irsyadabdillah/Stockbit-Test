@@ -6,6 +6,7 @@ import android.view.Menu
 import com.stockbit.hiring.R
 import com.stockbit.hiring.adapter.WatchlistAdapter
 import com.stockbit.hiring.databinding.ActivityWatchlistBinding
+import com.stockbit.hiring.model.DataResponse
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class WatchlistActivity : AppCompatActivity() {

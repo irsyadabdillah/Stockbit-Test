@@ -9,7 +9,7 @@ import retrofit2.http.Query
 interface ApiService {
 
     @GET("data/top/totaltoptiervolfull")
-    suspend fun fetchWatchlistAsync(
+    suspend fun getWatchlistResponse(
         @Query("tsym") tsym: String = Constant.TSYM,
         @Query("page") page: Int = Constant.PAGE
     ): Response<DataResponse>

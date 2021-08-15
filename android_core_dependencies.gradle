@@ -17,6 +17,7 @@ dependencies {
     implementation AndroidLibraries.navigationFrag
     implementation AndroidLibraries.kotlinCoroutineAndroid
 
+
     // KOIN
     implementation Libraries.koin
     implementation Libraries.koinViewModel

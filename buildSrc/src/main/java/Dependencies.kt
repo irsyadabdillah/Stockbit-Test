@@ -40,6 +40,8 @@ object Versions {
     val api = ""
     val okHttp = "3.12.1"
     val coroutines = "1.4.3"
+    val coroutines_adapter = "0.9.2"
+    val retrofit_adapter = "2.4.0"
     val koin = "2.0.1"
     val timber = "5.0.1"
     val lifecycle = "2.2.0"
@@ -80,6 +82,7 @@ object Libraries {
 object KotlinLibraries {
     val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
     val kotlinCoroutineCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
+    val kotlinCoroutinesAdapter = "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:${Versions.coroutines_adapter}"
 }
 
 object AndroidLibraries {

@@ -6,7 +6,7 @@ package com.stockbit.common.utils
 object Constant {
     const val BASE_URL = "https://min-api.cryptocompare.com/"
     const val TSYM = "USD"
-    const val PAGE = 1
+    const val PAGE = 0
     const val NETWORK_TIMEOUT = 60L
 }
 

@@ -26,6 +26,8 @@ dependencies {
     implementation KotlinLibraries.kotlin
     implementation KotlinLibraries.kotlinCoroutineCore
     implementation AndroidLibraries.kotlinCoroutineAndroid
+    implementation KotlinLibraries.kotlinCoroutinesAdapter
+
     // ANDROID
     implementation AndroidLibraries.appCompat
     implementation AndroidLibraries.coreKtx
@@ -53,4 +55,5 @@ dependencies {
 
     //TIMBER
     implementation Libraries.timber
+
 }

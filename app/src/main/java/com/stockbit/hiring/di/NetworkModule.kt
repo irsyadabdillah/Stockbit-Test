@@ -27,7 +27,6 @@ val networkModule = module {
             .connectTimeout(Constant.NETWORK_TIMEOUT, TimeUnit.SECONDS)
             .readTimeout(Constant.NETWORK_TIMEOUT, TimeUnit.SECONDS)
             .writeTimeout(Constant.NETWORK_TIMEOUT, TimeUnit.SECONDS)
-//            .addInterceptor()
             .addInterceptor(
                 HttpLoggingInterceptor()
                     .setLevel(if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY else HttpLoggingInterceptor.Level.NONE)
@@ -40,6 +39,7 @@ val networkModule = module {
             .baseUrl(Constant.BASE_URL)
             .client(get<OkHttpClient>())
             .addConverterFactory(GsonConverterFactory.create())
+//            .addCallAdapterFactory(CoroutineCallAdapterFactory())
             .build()
     }
 
